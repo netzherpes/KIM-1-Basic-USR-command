@@ -1,15 +1,13 @@
-Last week I broke my head over an essential question:<br>
+Last week I broke my head over an essential question:
 KIM-1 Microsoft Basic has no GET command, because you can not scan the serial line like a keyboard.
 But without this command you are not able to program a game other than puzzles or adventures, because you have no direct input.
 
 What if we could use the hex pad on the KIM-1 like a joystick for input? This would require an somewhere hidden assembler routine to scan for button pushes.
 
 There is a BASIC command for doing so called USR (user sub routine) 
-<br>Problem: the first Basic manual propably written by Billy himself is *unusable* . The explanaition is not very precise to be exact.
-<br>Take a look yourself:<br>![enter image description here][1]
-![enter image description here][2]
+Problem: the first Basic manual propably written by Billy himself is *unusable* . The explanaition is not very precise to be exact.
 
-**BUT**<br>
+**BUT**
 Here are the 3(+1) steps you may want to follow to ger USR working:
 
 1. poke in where the Subroutine is located. Poke this address lowbyte / highbyte to $2040 and $2041
